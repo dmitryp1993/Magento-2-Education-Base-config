@@ -37,6 +37,9 @@ $PHP bin/magento config:set 'dev/css/use_css_critical_path' 0
 echo 'SET dev/js/move_script_to_bottom -> 0'
 $PHP bin/magento config:set 'dev/js/move_script_to_bottom' 0
 
+echo 'SET payment/checkmo/active -> 1'
+$PHP bin/magento config:set 'payment/checkmo/active' 1
+
 echo 'Disable admin recaptcha'
 $PHP bin/magento msp:security:recaptcha:disable
 
